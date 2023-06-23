@@ -45,15 +45,15 @@ export default {
     addTask() {
       if (this.newTask.title.trim() !== "") {
         this.tasks.push({ ...this.newTask, completed: false });
-        this.saveTasksToLocalStorage(); 
+        this.saveTasksLocalStorage(); 
         this.resetNewTask();
       }
     },
     removeTask(index) {
       this.tasks.splice(index, 1);
-      this.saveTasksToLocalStorage();
+      this.saveTasksLocalStorage();
     },
-    saveTasksToLocalStorage() {
+    saveTasksLocalStorage() {
       localStorage.setItem("tasks", JSON.stringify(this.tasks));
     },
     getTasksFromLocalStorage() {
