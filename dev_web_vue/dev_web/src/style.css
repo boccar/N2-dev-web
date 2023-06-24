@@ -6,13 +6,7 @@ body {
   }
   
   .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow:  42px 42px 84px #aaaaaa,
-             -42px -42px 84px #ffffff;
+
   }
   
   h1 {
@@ -95,8 +89,6 @@ body {
     padding: 10px;
   }
   
-  .completed {
-    text-decoration: line-through;
-  }
+
   
   
